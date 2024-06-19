@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
-    width: '100%', // 추가: 부모 컨테이너의 너비를 100%로 설정
+    width: '100%',
   },
   memberIdText: {
     fontSize: 24,
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 15,
     alignItems: 'center',
-    alignSelf: 'stretch', // 추가: 자식 컨테이너의 너비를 부모의 너비에 맞추기 위해 설정
+    alignSelf: 'stretch', 
   },
   title: {
     fontSize: 18,

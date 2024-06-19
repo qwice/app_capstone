@@ -114,11 +114,12 @@ export default function Screen1({ route }) {
     } catch (error) {
       console.error('Error setting control mode:', error);
     }
-    
+  
     if (mode === '자동 제어 모드') {
       navigation.navigate('AutoControl', { memberId });
     }
   };
+  
   
   return (
     <View style={styles.container}>
@@ -190,9 +191,6 @@ export default function Screen1({ route }) {
                 <Text style={styles.modalText}>{selectedIcon}</Text>
                 <View style={{ alignItems: 'center' }}>
                 <Switch
-                  trackColor={{ false: "#ff3399", true: "#ffc0cb" }}
-                  thumbColor={switchValues[selectedIcon] ? "white" : "white"}
-                  ios_backgroundColor="#3e3e3e"
                   onValueChange={() => onSwitchChange(selectedIcon)}
                   value={switchValues[selectedIcon]}
                 />
@@ -226,6 +224,7 @@ export default function Screen1({ route }) {
           </View>
         </View>
       </Modal>
+
     </View>
   );
 }
